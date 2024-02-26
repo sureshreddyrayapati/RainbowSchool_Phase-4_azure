@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SchoolWebApp_Phase4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="SchoolStyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 233px;
+        }
+        .auto-style3 {
+            position: absolute;
+            top: 58px;
+            left: 3px;
+        }
+        .auto-style5 {
+            width: 297px;
+        }
+        .auto-style6 {
+            position: absolute;
+            top: 58px;
+            left: 541px;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 58px;
+            left: 825px;
+            z-index: 1;
+            width: 74px;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 56px;
+            left: 240px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="header">
+           <h1>&nbsp;RainBow School</h1>
+           <table class="auto-style1">
+               <tr>
+                   <td class="auto-style2">
+                       <asp:HyperLink ID="HyperLink2" runat="server" BorderColor="#CC66FF" BorderStyle="Groove" CssClass="auto-style3" Font-Names="Eras Medium ITC" NavigateUrl="~/Home.aspx" style="z-index: 1">Home</asp:HyperLink>
+                   </td>
+                   <td class="auto-style5">
+                       <asp:HyperLink ID="HyperLink6" runat="server" BorderStyle="None" CssClass="auto-style8" Font-Italic="False" Font-Names="Dubai Medium" NavigateUrl="~/Students.aspx">Students</asp:HyperLink>
+                   </td>
+                   <td>
+                       <asp:HyperLink ID="HyperLink4" runat="server" CssClass="auto-style6" NavigateUrl="~/Classes.aspx" style="z-index: 1">Classes</asp:HyperLink>
+                   </td>
+                   <td>
+                       <asp:HyperLink ID="HyperLink5" runat="server" CssClass="auto-style7" NavigateUrl="~/Teachers.aspx">Teachers</asp:HyperLink>
+                   </td>
+               </tr>
+           </table>
+       </div>
+        <div class="placeholder">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
